@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types"; // for type-checking props
 import "../../CSS/FilterModal.css";
 import "react-input-range/lib/css/index.css"; //Importing CSS file for input range styling
-import InputRange from "react-input-range";
+// import InputRange from "react-input-range";
+import Slider from 'rc-slider';
+import 'rc-slider/assets/index.css';
 
 const FilterModal = ({ selectedFilters, onFilterChange, onClose }) => {
   const [priceRange, setPriceRange] = useState({
@@ -174,9 +176,9 @@ const FilterModal = ({ selectedFilters, onFilterChange, onClose }) => {
         <div className="modal-filters-container">
           <div className="filter-section">
             <label>Price range:</label>
-            <InputRange
-              minValue={600}
-              maxValue={30000}
+            <Slider
+              min={600}
+              max={30000}
               value={priceRange}
               onChange={handlePriceRangeChange}
             />
