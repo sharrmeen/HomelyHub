@@ -1,6 +1,10 @@
 **/.env/backendObfuscated/.env
 /backendObfuscated/config.env
 /frontend/.env
+/frontend1/.env
+/frontend2/.env
+**/*.env
+
 # Node modules
 node_modules/
 frontend/node_modules/

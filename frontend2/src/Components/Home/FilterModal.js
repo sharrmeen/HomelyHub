@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types"; // for type-checking props
 import "../../CSS/FilterModal.css";
-// import "react-input-range/lib/css/index.css"; //Importing CSS file for input range styling
+//  import "react-input-range/lib/css/index.css"; //Importing CSS file for input range styling
 // import InputRange from "react-input-range";
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
