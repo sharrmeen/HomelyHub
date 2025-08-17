@@ -31,4 +31,9 @@ app.use(cookieParser());
 app.use("/api/v1/rent/listing", propertyRoutes);
 app.use("/api/v1/rent/user", userRoutes);
 
+//health endpoint to maintain activity
+app.get("/health", (req, res) => {
+  res.status(200).send("OK");
+});
+
 module.exports = app;
